@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - java -version
+      - ./gradlew clean bootJar
+artifacts:
+  files:
+    - 'Dockerfile'
+    - build/libs/e-commerce-0.0.1-SNAPSHOT.jar
+

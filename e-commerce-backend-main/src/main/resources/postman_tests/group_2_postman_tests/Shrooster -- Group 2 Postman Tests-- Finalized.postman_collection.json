@@ -1,0 +1,546 @@
+{
+	"info": {
+		"_postman_id": "9a13ef7f-3070-4319-bf26-df4c44809476",
+		"name": "Shrooster -- Group 2 Postman Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23223898"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"item": [
+				{
+					"name": "Test 1 -- Gizzard in a Blizzard",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 10,\r\n    \"prodPrice\":  9.99,\r\n    \"prodDesc\":  \"We put a gizzard in the freezer. It just works.\",\r\n    \"prodImage\": \"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png\",\r\n    \"prodName\": \"Gizzard in a Blizzard\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 2 -- Chicken Hat",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 10,\r\n    \"prodPrice\":  4.99,\r\n    \"prodDesc\":  \"Hats? Better- hat with bird.\",\r\n    \"prodImage\": \"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png\",\r\n    \"prodName\": \"Chicken Hat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 3 -- Chicken Shirt",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 10,\r\n    \"prodPrice\":  14.99,\r\n    \"prodDesc\":  \"When you just want a bird on a shirt.\",\r\n    \"prodImage\": \"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png\",\r\n    \"prodName\": \"T-Shrosstert\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 4 -- Chicken Bucket",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 15,\r\n    \"prodPrice\":  14.99,\r\n    \"prodDesc\":  \"It's a bucket of chicken\",\r\n    \"prodImage\": \"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png\",\r\n    \"prodName\": \"Chicken Bucket\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "READ",
+			"item": [
+				{
+					"name": "By Name",
+					"item": [
+						{
+							"name": "Test 1 -- by name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?nameQuery=chicken",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "imageQuery",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "descQuery",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "priceQuery",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "nameQuery",
+											"value": "chicken"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Test 2 -- by name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?nameQuery=hat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "nameQuery",
+											"value": "hat"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "By Tag",
+					"item": [
+						{
+							"name": "Test 1 -- by Desc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?descQuery=blizzard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "descQuery",
+											"value": "blizzard"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Test 2 -- by Long Desc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?descQuery=gizzard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "descQuery",
+											"value": "gizzard"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "By Image",
+					"item": [
+						{
+							"name": "Test 1 -- by Image",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?imageQuery=testImage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "imageQuery",
+											"value": "testImage"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "By Price",
+					"item": [
+						{
+							"name": "Test 1 -- by Price",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?priceQuery=9.99",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "priceQuery",
+											"value": "9.99"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Test 2 -- by Tag Copy 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/search?priceQuery=9.99",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										"search"
+									],
+									"query": [
+										{
+											"key": "priceQuery",
+											"value": "9.99"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/prod/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UPDATE Copy",
+			"item": [
+				{
+					"name": "Test 1 -- Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 20,\r\n    \"prodPrice\":  19.99,\r\n    \"prodDesc\":  \"testDescUPDATED\",\r\n    \"prodImage\": \"testImageUPDATED\",\r\n    \"prodName\": \"testNameUPDATED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE Copy",
+			"item": [
+				{
+					"name": "Test 1 -- by {ID}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 10,\r\n    \"prodPrice\":  9.99,\r\n    \"prodDesc\":  \"testDesc\",\r\n    \"prodImage\": \"testImage\",\r\n    \"prodName\": \"testName\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 1 -- verify",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prodQuantity\": 10,\r\n    \"prodPrice\":  9.99,\r\n    \"prodDesc\":  \"testDesc\",\r\n    \"prodImage\": \"testImage\",\r\n    \"prodName\": \"testName\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PATCH map Copy",
+			"item": [
+				{
+					"name": "Test 1 -- Transact Product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n{\r\n    \"prodIdDto\":2,\r\n    \"prodDtoQuantity\":1\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test 1 -- Transact Many",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n{\r\n    \"prodIdDto\":4,\r\n    \"prodDtoQuantity\":1\r\n},\r\n{\r\n    \"prodIdDto\":2,\r\n    \"prodDtoQuantity\":1\r\n},\r\n{\r\n    \"prodIdDto\":3,\r\n    \"prodDtoQuantity\":1\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

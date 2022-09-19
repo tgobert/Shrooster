@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "cc47da5d-4337-4116-93e9-38b908424128",
+		"name": "Shrooster Wishlist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22269619"
+	},
+	"item": [
+		{
+			"name": "POST Add Wish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/wish/post/1/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"wish",
+						"post",
+						"1",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Wish By Product Id and User Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/wish/delete/1/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"wish",
+						"delete",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Wishlist by Userid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/wish/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"wish",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Product by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/prod/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"prod",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/wish/delete_all/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"wish",
+						"delete_all",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

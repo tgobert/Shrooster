@@ -1,0 +1,641 @@
+{
+	"info": {
+		"_postman_id": "2c2dabfd-e1a5-4e1f-baf8-dca4514ef430",
+		"name": "Revature_Project3-User_Profile_Back_End-Ruslan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10570928"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Get profile basic information",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc4OH0.NwKzm3ZKgjgLbR0aKSuQ_VlA9wanMVkLjc9XoCTOZ8o",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all profile information",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc4OH0.NwKzm3ZKgjgLbR0aKSuQ_VlA9wanMVkLjc9XoCTOZ8o",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"all"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get profile image",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2Mjc5MTUzNX0.QIYg5GgPxymHn1O5JGq-1VKBf3FeNsn4M_oysh7pChg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/image",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"image"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get information about address",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc4OH0.NwKzm3ZKgjgLbR0aKSuQ_VlA9wanMVkLjc9XoCTOZ8o",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/uaddress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"uaddress"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get information about payment",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc4OH0.NwKzm3ZKgjgLbR0aKSuQ_VlA9wanMVkLjc9XoCTOZ8o",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/upayment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"upayment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Register",
+					"item": [
+						{
+							"name": "Add new user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\" : \"Kai\",\r\n    \"lastName\" : \"Freedom\",\r\n    \"userEmail\" : \"test@gmail.com\",\r\n    \"userPassword\" : \"12345aA!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add new user (missing field)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\" : \"\",\r\n    \"lastName\" : \"Freedom\",\r\n    \"userEmail\" : \"test@gmail.com\",\r\n    \"userPassword\" : \"12345aA@\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add new user (incorrect email)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\" : \"Kai\",\r\n    \"lastName\" : \"Freedom\",\r\n    \"userEmail\" : \"testgmail.com\",\r\n    \"userPassword\" : \"12345aA@\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add new user (short last name)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\" : \"Kai\",\r\n    \"lastName\" : \"F\",\r\n    \"userEmail\" : \"test@gmail.com\",\r\n    \"userPassword\" : \"12345aA@\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add new user (invalid password)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\" : \"Kai\",\r\n    \"lastName\" : \"Freedom\",\r\n    \"userEmail\" : \"test@gmail.com\",\r\n    \"userPassword\" : \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "Sign-in",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userEmail\" : \"test@gmail.com\",\r\n    \"userPassword\" : \"12345aA!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign-out",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc2NH0.2TrJngqtcUab18Y2hD3huKKxwoOAVsI-XGXsOwFLEGg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Add/update address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc4OH0.NwKzm3ZKgjgLbR0aKSuQ_VlA9wanMVkLjc9XoCTOZ8o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city\" : \"New York City\",\r\n    \"country\" : \"United States\",\r\n    \"state\" : \"NY\",\r\n    \"street\" : \"5th Avenue\",\r\n    \"zipCode\" : \"11111\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile/uaddress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"uaddress"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add/update profile image",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2Mjc5MTMwMX0.X6NuEmzj2_L8b0DjDembeCERJ2dqVVguyw_hg4SAY6U",
+										"type": "text"
+									},
+									{
+										"key": "imageFile",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "imageFile",
+											"type": "file",
+											"src": "/C:/Users/rshul/Pictures/picts/osman-rana-dI9KhXi0ooE-unsplash.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile/image",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"image"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add/update payment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjU2MTc4OH0.NwKzm3ZKgjgLbR0aKSuQ_VlA9wanMVkLjc9XoCTOZ8o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ccNumber\" : \"444444444\",\r\n    \"expPeriod\" : \"999999\",\r\n    \"svcCode\" : \"123\",\r\n    \"zipCode\" : \"3333333\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile/upayment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"upayment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PATCH",
+			"item": [
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Update user password",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjQyNzMyMH0.ROjltdNz5DATJQ9xJoHODxLepbCP0qH8PYtwy0i0Uj4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userPassword\" : \"555555aA!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Delete address information",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjQzMjgzOH0.UQZgGicuuyrc2ft9Mc1W2ymhCaQ1yTS0RbZDYSNhZGM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/uaddress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"uaddress"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete image by id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjgyOTc5NX0.f_p143DWQfoeKV8u_RuBgFwO29DUJ7BELf6n6vpxiZo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/image",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"image"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete payment information",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "rolodex-token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoidGVzdEBnbWFpbC5jb20iLCJpc3MiOiJSb2xvZGV4IEFQSSIsImlhdCI6MTY2MjQzMjgzOH0.UQZgGicuuyrc2ft9Mc1W2ymhCaQ1yTS0RbZDYSNhZGM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/profile/upayment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										"upayment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

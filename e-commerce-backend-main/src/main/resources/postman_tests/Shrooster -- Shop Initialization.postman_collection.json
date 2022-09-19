@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "37d5ac94-7494-44f3-8dcc-8f1e4c38f3dd",
+		"name": "Shrooster -- Shop Initialization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23223898"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create",
+					"item": [
+						{
+							"name": "Cluckin' Cowboy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"prodQuantity\": 10,\r\n    \"prodPrice\":  19.99,\r\n    \"prodDesc\":  \"This chicken ain't so chicken. A conversation piece for your western-themed decor\",\r\n    \"prodImage\": \"https://ucarecdn.com/6723658a-6baf-449a-888f-3ec97b36fd27/fda.jpeg\",\r\n    \"prodName\": \"Cluckin' Cowboy\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/prod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tutu to Tim'cluck'tu",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"prodQuantity\": 8,\r\n    \"prodPrice\":  29.99,\r\n    \"prodDesc\":  \"When you've gotta be delicious and dance at the same time.\",\r\n    \"prodImage\": \"https://ucarecdn.com/837bcbff-2c6e-420a-99d8-36f613ae33a1/sss.jpeg\",\r\n    \"prodName\": \"Tutu to Tim'cluck'tu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/prod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Head Roost'r",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"prodQuantity\": 27,\r\n    \"prodPrice\":  14.99,\r\n    \"prodDesc\":  \"A plushy friend to roost on your head.\",\r\n    \"prodImage\": \"https://ucarecdn.com/dc22e6bb-fa1f-48db-aeb1-2709830e81fb/chickenHat.jpeg\",\r\n    \"prodName\": \"Head Roost'r\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/prod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stilbeakos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"prodQuantity\": 2,\r\n    \"prodPrice\":  49.99,\r\n    \"prodDesc\":  \"Shoes- not just shoes, stilletos with BEAKS!\",\r\n    \"prodImage\": \"https://ucarecdn.com/330ae62d-671a-446e-8005-8a39ad511ccc/dvbgh.jpeg\",\r\n    \"prodName\": \"Stilbeakos\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/prod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "The Poultry Protector",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"prodQuantity\": 12,\r\n    \"prodPrice\":  4.99,\r\n    \"prodDesc\":  \"This apron will keep both you AND your chicken safe in the kitchen, pen, or range.\",\r\n    \"prodImage\": \"https://ucarecdn.com/d9042a1f-963e-4b12-a906-5eff9bcad688/HenApronChickenSaddleBackProtectortoPromoteFeatherRegrowthforPoultryjpg_Q90jpg_.webp\",\r\n    \"prodName\": \"The Poultry Protector\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/prod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Retrieve",
+					"item": [
+						{
+							"name": "GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/prod/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"prod",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

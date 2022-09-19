@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "39d09916-c3f1-4184-9877-24689a919ef6",
+		"name": "Shrooster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22240541"
+	},
+	"item": [
+		{
+			"name": "POST prod 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prodQuantity\": 1,\r\n    \"prodPrice\":  29.99,\r\n    \"prodDesc\":  \"It's a gizzard in a blizzard\",\r\n    \"prodImage\": \"some image\",\r\n    \"prodName\": \"Gizzard in a Blizzard\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/prod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST prod 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prodQuantity\": 1,\r\n    \"prodPrice\":  9.99,\r\n    \"prodDesc\":  \"A handsome rooster t-shirt\",\r\n    \"prodImage\": \"some image\",\r\n    \"prodName\": \"Rooster shirt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/prod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET prod 1 by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prod/search?name=Gizzard in a Blizzard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prod",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Gizzard in a Blizzard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET prod 2 by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prod/search?name=Rooster shirt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prod",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Rooster shirt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET prod 1 by desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prod/search?description=gizzard in a blizzard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prod",
+						"search"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "gizzard in a blizzard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET prod 2 by desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/prod/search?description=Rooster t-shirt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prod",
+						"search"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Rooster t-shirt"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

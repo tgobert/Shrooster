@@ -1,0 +1,56 @@
+<div class="container mt-5 px-5">
+
+    <div class="mb-4">
+
+        <h2>Checkout</h2>
+        
+    </div>
+    
+    <div class="switch">
+    </div>
+    
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card" *ngIf="!loadUserInfo">
+
+                <app-profile></app-profile>
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6">
+                    </div>                   
+                </div>
+
+                <div class="mt-4 mb-4">
+
+                </div>
+            </div>
+            <div *ngIf="loadUserInfo">
+            </div>
+
+            <div class="mt-4 mb-4 d-flex justify-content-between">
+
+                <button class="btn btn-danger" id="button-style" [routerLink]="['/cart']">Back to Cart</button>
+
+                <button class="btn btn-success px-3" id="button-style" (click)="onSubmit();">Pay ${{totalPrice}}</button>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3 center">
+
+            <div class="card card-blue text-white abs">
+
+            <span>Total Amount Due:</span>
+                <div class="">
+                    <h1 class="">${{totalPrice}}</h1>
+                </div>                
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
